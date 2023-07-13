@@ -1,2 +1,2 @@
 # usercss
-Usercss files for Stylus extension.
+Usercss files for [Stylus](https://github.com/openstyles/stylus) extension.
