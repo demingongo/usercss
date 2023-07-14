@@ -1,0 +1,443 @@
+/* ==UserStyle==
+@name           Google Rice
+@namespace      github.com/demingongo/usercss
+@version        1.0.0
+@description    for google
+@author         demingongo
+@homepageURL    https://github.com/demingongo/usercss
+@supportURL     https://github.com/demingongo/usercss/issues
+@updateURL      https://github.com/demingongo/usercss/raw/main/src/google/googlerice.user.css
+@license        MIT
+@preprocessor   stylus
+@var select theme "Theme" ["light:Light", "gruvbox:Gruvbox (dark)", "space:Space (dark)"]
+@var select background "Background"   {
+  "Default": "default",
+  "Style 1": "city",
+  "Style 2": "ilya-kuvshinov",
+  "Style 3": "prompt"
+}
+==/UserStyle== */
+@-moz-document regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?."),
+regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
+regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
+regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?."),
+regexp("(https|http)://(www|translate|play|drive|books|plus|docs|accounts|myaccount|scholar|images|news|encrypted).google\\.(com|([a-z]{2}))(\\.[a-z]{2})?/(?!mobile|ad#hdtb .hdtb-mitem asense|shopping|community|voice|android|calendar|maps|fonts|.*._/notifications).*") {
+
+    /* Light theme */
+    if theme==light {
+        body {
+            if background==city {
+                background: url(https://static.vecteezy.com/system/resources/previews/010/066/252/non_2x/hand-drawn-abstract-background-with-color-pastel-free-vector.jpg) 0px fixed !important;
+            }
+
+            else if background==ilya-kuvshinov {
+                background: url(https://wallpapercrafter.com/desktop/150839-Ghost-in-the-Shell-Ghost-in-the-Shell-Movie-Kusanagi-Motoko-Ilya-Kuvshinov.jpg) 0px fixed !important;
+            }
+
+            else if background==prompt {
+                background: url(https://images.unsplash.com/photo-1517249865690-ee36eb09e596?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80) 0px fixed !important;
+            }
+
+            else {
+                background: url(https://static.vecteezy.com/system/resources/previews/009/457/632/non_2x/leaves-dot-and-line-on-wave-minimal-background-illustration-pastel-abstract-wallpaper-free-vector.jpg) 0px fixed !important;
+            }
+
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+        }
+
+        /* do not display he country */
+        .uU7dJb {
+            display: none;
+        }
+
+        .lnXdpd,
+        img.jfN4p {
+            opacity: 0%;
+        }
+
+        .k1zIA.rSk4se,
+        #logo {
+            background: url(https://www.thezoots.com/wp-content/uploads/2015/02/google.png) center no-repeat !important;
+            background-size: 95% !important;
+        }
+
+        .k1zIA.rSk4se {
+            max-height: 150px;
+            max-width: 500px;
+            margin-bottom: -10px;
+        }
+
+        .lJ9FBc input[type="submit"],
+        .gbqfba {
+            background-color: #FFF0;
+            border: 2px solid #FFF0;
+            border-radius: 30px;
+        }
+
+        #SIvCob {
+            color: #f2eff8;
+        }
+
+        a {
+            color: #ff5d8f;
+        }
+
+        .c93Gbe {
+            background: #fff0;
+        }
+
+        .RNNXgb {
+            background: #bde0fe73;
+            border: 1px solid #bde0fe73;
+        }
+
+        .uU7dJb {
+            color: #ff5d8f;
+        }
+
+        a.EzVRq,
+        button.EzVRq {
+            color: #ff5d8f;
+        }
+
+        a.pHiOh {
+            color: #ff5d8f;
+        }
+
+        #logo img {
+            overflow: hidden;
+            position: relative;
+            display: none;
+        }
+
+        #logo {
+            background: url("https://i.pinimg.com/originals/7c/77/e4/7c77e4fa3fc4799e6e9cee30ded805a4.jpg") no-repeat !important;
+            background-size: 100% !important;
+            border-radius: 5% 5%;
+            height: 85px !important;
+            width: 85px !important;
+            position: relative !important;
+            top: -25px !important;
+            left: auto !important;
+        }
+
+        div.aajZCb {
+            background: #bde0fee0;
+        }
+
+        .appbar {
+            background: #fff0;
+        }
+
+        .sfbg {
+            display: none;
+        }
+
+        .yg51vc {
+            background: #fff0;
+            height: 58px;
+            padding: 0;
+            position: relative;
+            z-index: 126;
+            white-space: nowrap;
+        }
+
+        .I6TXqe {
+            background: #bde0fee0;
+        }
+
+        .hb8SAc {
+            color: #000000;
+        }
+
+        .ynAwRc {
+            color: #809bce;
+        }
+
+        .f6F9Be {
+            background: #bde0fe73;
+        }
+
+        .F1hUFe {
+            background: url("https://www.thezoots.com/wp-content/uploads/2015/02/google.png") no-repeat !important;
+            background-size: 100% !important;
+            height: 50px !important;
+            width: 65px !important;
+            top: -10px !important;
+        }
+
+        svg.TYpZOd {
+            display: none;
+        }
+
+        .s8GCU {
+            background: #a2d2ff22;
+        }
+
+        .Lj9fsd {
+            background: #ffc8dde0;
+        }
+
+        div.jZWadf {
+            background: #a2d2ff22;
+        }
+
+        .rsGxI.Ww4FFb,
+        .Ww4FFb {
+            background-color: #FFF0;
+        }
+    }
+}
+
+@-moz-document regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?."),
+regexp("https?://www.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
+regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|webhp|search|gfe_rd|auth|gws_rd|#q|imghp|#gfe_rd|#safe|#pws|#tbs|#gws|#tbm).*)"),
+regexp("https?://encrypted.google.(com|([a-z]{2}))(.[a-z]{2})?."),
+regexp("(https|http)://(www|translate|play|drive|books|plus|docs|accounts|myaccount|scholar|images|news|encrypted).google\\.(com|([a-z]{2}))(\\.[a-z]{2})?/(?!mobile|ad#hdtb .hdtb-mitem asense|shopping|community|voice|android|calendar|maps|fonts|.*._/notifications).*") {
+
+    /* Gruvbox */
+    if theme==gruvbox {
+
+        .lnXdpd,
+        img.jfN4p {
+            opacity: 0%;
+        }
+
+        .k1zIA.rSk4se,
+        #logo {
+            background: url(https://user-images.githubusercontent.com/31720261/156893394-a14a7fee-749c-4d02-8bfd-1a4cb2c479dd.png) center center !important;
+            background-size: cover !important;
+        }
+
+        #gb {
+            background: transparent !important;
+        }
+
+        .L3eUgb {
+            if background==city {
+                background: url(https://cdn.discordapp.com/attachments/635625973764849684/949034108254846976/wall_secondary.png) center center !important;
+            }
+
+            else if background==ilya-kuvshinov {
+                background: url(https://rare-gallery.com/resol/1600x900/561524-ilya-kuvshinov.jpg) center center !important;
+            }
+
+            else if background==prompt {
+                background: url(https://i.imgur.com/tbH5znV.png) center center !important;
+            }
+
+            background-color: #3c3836;
+            opacity: 0.9;
+        }
+
+        /* do not display he country */
+        .uU7dJb {
+            display: none;
+        }
+
+        .o3j99 {
+            background: transparent !important;
+        }
+
+        a.pHiOh {
+            color: #d5c4a1 !important;
+        }
+
+        .uU7dJb {
+            color: #d5c4a1 !important;
+            border-bottom: 1px solid #cccbcb5e;
+        }
+
+        #SIvCob {
+            /*display: none;*/
+        }
+
+        a.EzVRq {
+            color: #d5c4a1 !important;
+        }
+
+        div#SIvCob {
+            /*display: none !important;*/
+        }
+
+        .o3j99.ikrT4e.om7nvf {
+            opacity: 0.75 !important;
+        }
+
+        .gb_pa {
+            background-color: rgba(32, 33, 36, 0) !important;
+        }
+
+        .b0KoTc {
+            display: none !important;
+        }
+
+        .pHiOh,
+        a.pHiOh,
+        a.gb_d,
+        span.gb_d,
+        .gb_oa svg,
+        .gb_Lc svg,
+        .gb_Lc a.gb_t,
+        .gb_Lc span.gb_t,
+        .lJ9FBc input[type="submit"] {
+            color: #d5c4a1;
+        }
+
+        .lJ9FBc input[type="submit"]:hover {
+            color: #ebdbb2;
+            border: 1px solid #d5c4a1;
+        }
+
+        .gLFyf {
+            color: #ebdbb2;
+        }
+
+
+        /* search section */
+        /* background */
+        body.srp,
+        .appbar,
+        .FalWJb,
+        .tF2Cxc.asEBEc {
+            background-color: #3c3836 !important;
+        }
+
+        /* input search */
+        .RNNXgb,
+        .emcav .RNNXgb,
+        .aajZCb {
+            background-color: #282828 !important;
+            color: #ebdbb2;
+        }
+
+        /* elements (header, footer, ...) */
+        .sfbg,
+        .minidiv .sfbg,
+        .yg51vc,
+        .S8ee5,
+        .ZFiwCf,
+        .k8XOCe,
+        #fbar {
+            background-color: #282828 !important;
+        }
+
+        a,
+        .ynAwRc,
+        .hdtb-mitem.hdtb-msel {
+            color: #ebdbb2;
+        }
+
+        .YTDezd {
+            background: #ebdbb2;
+        }
+
+        .s75CSd {
+            color: #ebdbb2;
+        }
+
+        .hdtb-mitem a {
+            color: #d5c4a1;
+        }
+    }
+}
+
+@-moz-document url-prefix("https://www.google.") {
+
+    /* Space theme */
+    if theme==space {
+        :root {
+            if background==city {
+                --background-url: url(https://cdn.dribbble.com/users/43762/screenshots/1438974/media/487e8955c49643b4c79b7b4a05c4f7e4.gif) center center;
+            }
+
+            else if background==prompt {
+                --background-url: url(https://wallpaperaccess.com/full/1616118.png) center center;
+            }
+
+            else {
+                --background-url: url(https://cdn.dribbble.com/users/43762/screenshots/1438973/media/286b2f1d9c1bc6887217c760cc9cc605.gif) center center;
+            }
+        }
+
+        .lnXdpd {
+            opacity: 85%;
+        }
+
+        #gb {
+            background: transparent !important;
+        }
+
+        /* hide country */
+        .uU7dJb {
+            display: none;
+        }
+
+        .L3eUgb {
+            background: var(--background-url) !important;
+            background-size: cover !important;
+            opacity: 0.9;
+        }
+
+        .o3j99 {
+            background: transparent !important;
+        }
+
+        a.pHiOh {
+            color: #EAF6F6 !important;
+        }
+
+        .uU7dJb {
+            color: #EAF6F6 !important;
+            border-bottom: 1px solid #cccbcb5e;
+        }
+
+        a.EzVRq {
+            color: #e9e0c9 !important;
+        }
+
+        /* switch language */
+        div#SIvCob {
+            /*display: none !important;*/
+        }
+
+        .o3j99.ikrT4e.om7nvf {
+            opacity: 0.75 !important;
+        }
+
+        .gb_pa {
+            background-color: rgba(32, 33, 36, 0) !important;
+        }
+
+        .b0KoTc {
+            display: none !important;
+        }
+
+        a.gb_t,
+        .pHiOh,
+        a.pHiOh,
+        a.gb_d,
+        span.gb_d,
+        .gb_oa svg {
+            color: #e9e0c9;
+        }
+
+        /* search */
+        body.srp {
+            background: var(--background-url) !important;
+            background-size: cover !important;
+            opacity: 0.9;
+        }
+
+        .appbar {
+            background: #20212400
+        }
+
+        .tF2Cxc.asEBEc,
+        .FalWJb {
+            border-radius: 8px;
+            padding: 16px;
+        }
+    }
+}
