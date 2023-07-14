@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Google Rice
 @namespace      github.com/demingongo/usercss
-@version        1.0.0
+@version        1.0.1
 @description    for google
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -216,15 +216,16 @@ regexp("(https|http)://(www|translate|play|drive|books|plus|docs|accounts|myacco
 
         .L3eUgb {
             if background==city {
-                background: url(https://cdn.discordapp.com/attachments/635625973764849684/949034108254846976/wall_secondary.png) center center !important;
+                background: url(https://cdn.discordapp.com/attachments/635625973764849684/949034108254846976/wall_secondary.png) center no-repeat !important;
+                background-size: cover !important;
             }
-
             else if background==ilya-kuvshinov {
-                background: url(https://rare-gallery.com/resol/1600x900/561524-ilya-kuvshinov.jpg) center center !important;
+                background: url(https://rare-gallery.com/resol/1600x900/561524-ilya-kuvshinov.jpg) center no-repeat !important;
+                background-size: cover !important;
             }
-
             else if background==prompt {
-                background: url(https://i.imgur.com/tbH5znV.png) center center !important;
+                background: url(https://i.imgur.com/tbH5znV.png) center no-repeat !important;
+                background-size: cover !important;
             }
 
             background-color: #3c3836;
@@ -349,15 +350,15 @@ regexp("(https|http)://(www|translate|play|drive|books|plus|docs|accounts|myacco
     if theme==space {
         :root {
             if background==city {
-                --background-url: url(https://cdn.dribbble.com/users/43762/screenshots/1438974/media/487e8955c49643b4c79b7b4a05c4f7e4.gif) center center;
+                --background-url: url(https://cdn.dribbble.com/users/43762/screenshots/1438974/media/487e8955c49643b4c79b7b4a05c4f7e4.gif) center no-repeat;
             }
 
             else if background==prompt {
-                --background-url: url(https://wallpaperaccess.com/full/1616118.png) center center;
+                --background-url: url(https://wallpaperaccess.com/full/1616118.png) center no-repeat;
             }
 
             else {
-                --background-url: url(https://cdn.dribbble.com/users/43762/screenshots/1438973/media/286b2f1d9c1bc6887217c760cc9cc605.gif) center center;
+                --background-url: url(https://cdn.dribbble.com/users/43762/screenshots/1438973/media/286b2f1d9c1bc6887217c760cc9cc605.gif) center no-repeat;
             }
         }
 
@@ -384,17 +385,9 @@ regexp("(https|http)://(www|translate|play|drive|books|plus|docs|accounts|myacco
             background: transparent !important;
         }
 
-        a.pHiOh {
-            color: #EAF6F6 !important;
-        }
-
         .uU7dJb {
             color: #EAF6F6 !important;
             border-bottom: 1px solid #cccbcb5e;
-        }
-
-        a.EzVRq {
-            color: #e9e0c9 !important;
         }
 
         /* switch language */
@@ -415,12 +408,13 @@ regexp("(https|http)://(www|translate|play|drive|books|plus|docs|accounts|myacco
         }
 
         a.gb_t,
+        a.EzVRq,
         .pHiOh,
         a.pHiOh,
         a.gb_d,
         span.gb_d,
         .gb_oa svg {
-            color: #e9e0c9;
+            color: #EAF6F6 !important;
         }
 
         /* search */
