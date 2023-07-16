@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice
 @namespace      github.com/demingongo/usercss
-@version        1.0.2
+@version        1.0.3
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -9,17 +9,23 @@
 @updateURL      https://github.com/demingongo/usercss/raw/main/src/spotify/spiceonrice.user.css
 @license        MIT
 @preprocessor   stylus
-@var select theme "Theme" ["yellow:Yellow Zen", "pink:Pink Zen", "purple:Purple Zen"]
+@var select theme "Theme" ["yellow:Yellow Zen", "pink:Pink Zen", "purple:Purple Zen", "red:Red Zen"]
 ==/UserStyle== */
 @-moz-document domain("open.spotify.com") {
     /* open.spotify.com */
     .mMjg1Gizg9kYk8ILoTdp {
-        height: 112%;
+        height: 112.1%;
         z-index: -1;
     }
 
     .ZQftYELq0aOsg6tPbVbV {
         background: transparent;
+    }
+
+    /* bottom control panel */
+    .JG5J9NWJkaUO9fiKECMA {
+        background: rgba(18, 18, 18, 0.8);
+        border-radius: 5px;
     }
 
     /* themes */
@@ -29,9 +35,14 @@
         --bg-blur: blur(4px);
     }
     if theme==yellow {
+        :root {
+            --main-color: #ffff49;
+            --sub-color: #a88244;
+            --hi-color: #ffffb0;
+            --text-color: #ffc73b;
+        }
         body {
-
-            background-color: #ffff49;
+            background-color: var(--main-color);
         }
         .mMjg1Gizg9kYk8ILoTdp {
             background: url("https://wallpapercave.com/wp/wp11134589.png") 0px fixed;
@@ -39,10 +50,20 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        .JG5J9NWJkaUO9fiKECMA {
+            background: rgba(18, 18, 18, 0.5);
+        }
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x {
+            filter: opacity(01) hue-rotate(280deg);
+        }
     }
     else if theme==pink {
-        body {
-            background-color: #6de2ef;
+        :root {
+            --main-color: #6de2ef;
+            --sub-color: #b9588b;
+            --hi-color: #f5a3e7;
+            --text-color: #ec9ad7;
         }
         .mMjg1Gizg9kYk8ILoTdp {
             background: url("https://raw.githubusercontent.com/demingongo/usercss/main/assets/wp11869650.jpg") 0px fixed;
@@ -50,9 +71,9 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .JG5J9NWJkaUO9fiKECMA {
-            background: rgba(18, 18, 18, 0.8);
-            border-radius: 5px;
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x {
+            filter: opacity(01) hue-rotate(180deg);
         }
     }
     else if theme==purple {
@@ -60,84 +81,10 @@
             --translucide: rgba(18, 18, 18, 0.5);
             --bg-blur: blur(8px);
 
-            --main-color:#6a5ce5;
+            --main-color: #6a5ce5;
             --sub-color: #3c348a;
             --hi-color: #bc92f6;
             --text-color: #a281f5;
-        }
-        .encore-dark-theme, .encore-dark-theme .encore-base-set {
-            --text-bright-accent: var(--main-color);
-            --text-positive: var(--main-color);
-            --essential-bright-accent: var(--main-color);
-            --essential-positive: var(--main-color);
-        }
-        /* play buttons */
-        .encore-dark-theme .encore-bright-accent-set, 
-        .vnCew8qzJq3cVGlYFXRI,
-        /* right icons */
-        .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:after {
-            background-color: var(--main-color);
-        }
-        .encore-dark-theme .encore-bright-accent-set {
-            --background-base: var(--main-color);
-            --background-highlight: var(--hi-color);
-            --background-press: var(--sub-color);
-            --background-elevated-base: var(--main-color);
-            --background-elevated-highlight: var(--hi-color);
-            --background-elevated-press: var(--main-color);
-            --background-tinted-base: var(--main-color);
-            --background-tinted-highlight: var(--main-color);
-            --background-tinted-press: var(--main-color);
-            --background-unsafe-for-small-text-base: var(--main-color);
-            --background-unsafe-for-small-text-highlight: var(--main-color);
-            --background-unsafe-for-small-text-press: var(--main-color);
-        }
-        /* sliders (volume, track) */
-        .TywOcKZEqNynWecCiATc {
-            --fg-color: var(--main-color);
-            --is-active-fg-color: var(--hi-color);
-        }
-        /* current song */
-        .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .VpYFchIiPg3tPhBGyynT, 
-        .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .t_yrXoUO3qGsJS4Y6iXX,
-        /* current playlist */
-        .iTEtJB {
-            color: var(--text-color);
-        }
-        /* spectrum image */
-        img.n5XwsUqagSoVk8oMiw1x {
-            filter: opacity(01) hue-rotate(130deg);
-        }
-        /* right icons */
-        .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq,
-        .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:focus, 
-        .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:hover {
-            color: var(--text-color);
-        }
-        /* shuffle icon */
-        .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA,
-        .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus, 
-        .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):hover,
-        .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus:not(:focus-visible,:hover) {
-            color: var(--text-color);
-        }
-        /* repeat icon */
-        .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1,
-        .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus,
-        .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):hover,
-        .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus:not(:focus-visible,:hover) {
-            color: var(--text-color);
-        }
-        .ilPTuf {
-            fill: var(--text-color);
-        }
-        .control-button--active {
-            color: var(--text-color) !important;
-            fill: var(--text-color) !important;
-        }
-
-        body {
-            background-color: var(--main-color);
         }
         .mMjg1Gizg9kYk8ILoTdp {
             background: url("https://raw.githubusercontent.com/demingongo/usercss/main/assets/wp4819898.jpg") 0px fixed;
@@ -145,20 +92,114 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .JG5J9NWJkaUO9fiKECMA {
-            background: rgba(18, 18, 18, 0.8);
-            border-radius: 5px;
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x {
+            filter: opacity(01) hue-rotate(130deg);
         }
     }
     else if theme==red {
-        /* wip */
+        :root {
+            --translucide2: rgba(18, 18, 18, 0.9);
+            --bg-blur: blur(2px);
+            
+            --main-color: #f11b1b;
+            --sub-color: #730505;
+            --hi-color: #f15959;
+            --text-color: #dd3a3a;
+        }
+        .mMjg1Gizg9kYk8ILoTdp {
+            background: url("https://wallpapercave.com/wp/wp9095151.jpg") 0px fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x {
+            filter: opacity(01) hue-rotate(230deg);
+        }
     }
-    
+
+    /* buttons, etc, ... */
+    .encore-dark-theme,
+    .encore-dark-theme .encore-base-set {
+        --text-bright-accent: var(--main-color);
+        --text-positive: var(--main-color);
+        --essential-bright-accent: var(--main-color);
+        --essential-positive: var(--main-color);
+    }
+    /* play buttons */
+    .encore-dark-theme .encore-bright-accent-set,
+    .vnCew8qzJq3cVGlYFXRI,
+    /* right icons */
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:after {
+        background-color: var(--main-color);
+    }
+    .encore-dark-theme .encore-bright-accent-set {
+        --background-base: var(--main-color);
+        --background-highlight: var(--hi-color);
+        --background-press: var(--sub-color);
+        --background-elevated-base: var(--main-color);
+        --background-elevated-highlight: var(--hi-color);
+        --background-elevated-press: var(--main-color);
+        --background-tinted-base: var(--main-color);
+        --background-tinted-highlight: var(--main-color);
+        --background-tinted-press: var(--main-color);
+        --background-unsafe-for-small-text-base: var(--main-color);
+        --background-unsafe-for-small-text-highlight: var(--main-color);
+        --background-unsafe-for-small-text-press: var(--main-color);
+    }
+    /* sliders (volume, track) */
+    .TywOcKZEqNynWecCiATc {
+        --fg-color: var(--main-color);
+        --is-active-fg-color: var(--hi-color);
+    }
+    /* current song */
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .VpYFchIiPg3tPhBGyynT,
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .t_yrXoUO3qGsJS4Y6iXX,
+    /* current playlist */
+    .iTEtJB {
+        color: var(--text-color);
+    }
+    /* right icons */
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq,
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:focus,
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:hover {
+        color: var(--text-color);
+    }
+    /* shuffle icon */
+    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA,
+    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus,
+    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):hover,
+    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus:not(:focus-visible,
+    :hover) {
+        color: var(--text-color);
+    }
+    /* repeat icon */
+    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1,
+    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus,
+    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):hover,
+    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus:not(:focus-visible,
+    :hover) {
+        color: var(--text-color);
+    }
+    .ilPTuf {
+        fill: var(--text-color);
+    }
+    .control-button--active {
+        color: var(--text-color) !important;
+        fill: var(--text-color) !important;
+    }
+    /* background color */
+    body {
+        background-color: var(--main-color);
+    }
+
+
     /* background */
     .mMjg1Gizg9kYk8ILoTdp {
         filter: var(--bg-blur);
     }
-    
+
     /* left side */
     .BdcvqBAid96FaHAmPYw_ {
         background: transparent;
