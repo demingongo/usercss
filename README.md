@@ -7,5 +7,6 @@ Usercss files for [Stylus](https://github.com/openstyles/stylus) extension.
 
 2. Click on the link of the style you would like to install with Stylus:
 
-    - [Spice on Rice](https://github.com//demingongo/usercss/raw/main/src/spotify/spiceonrice.user.css) (for spotify)
-    - [Google Rice](https://github.com//demingongo/usercss/raw/main/src/google/googlerice.user.css) (for google)
+    - [Spice on Rice](https://github.com/demingongo/usercss/raw/main/src/spotify/spiceonrice.user.css) (for spotify)
+    - [Google Rice](https://github.com/demingongo/usercss/raw/main/src/google/googlerice.user.css) (for google)
+    - [DuckDuckGo Rice](https://github.com/demingongo/usercss/raw/main/src/duckduckgo/duckduckgorice.user.css) (for duckduckgo)
