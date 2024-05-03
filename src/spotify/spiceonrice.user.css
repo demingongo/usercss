@@ -54,7 +54,7 @@
             background: rgba(18, 18, 18, 0.5);
         }
         /* spectrum image */
-        img.n5XwsUqagSoVk8oMiw1x {
+        img.n5XwsUqagSoVk8oMiw1x, img.DZJJ5SCypi2mREbjy5bx {
             filter: opacity(01) hue-rotate(280deg);
         }
     }
@@ -72,7 +72,7 @@
             background-repeat: no-repeat;
         }
         /* spectrum image */
-        img.n5XwsUqagSoVk8oMiw1x {
+        img.n5XwsUqagSoVk8oMiw1x, img.DZJJ5SCypi2mREbjy5bx {
             filter: opacity(01) hue-rotate(180deg);
         }
     }
@@ -93,7 +93,7 @@
             background-repeat: no-repeat;
         }
         /* spectrum image */
-        img.n5XwsUqagSoVk8oMiw1x {
+        img.n5XwsUqagSoVk8oMiw1x, img.DZJJ5SCypi2mREbjy5bx {
             filter: opacity(01) hue-rotate(130deg);
         }
     }
@@ -114,7 +114,7 @@
             background-repeat: no-repeat;
         }
         /* spectrum image */
-        img.n5XwsUqagSoVk8oMiw1x {
+        img.n5XwsUqagSoVk8oMiw1x, img.DZJJ5SCypi2mREbjy5bx {
             filter: opacity(01) hue-rotate(230deg);
         }
     }
