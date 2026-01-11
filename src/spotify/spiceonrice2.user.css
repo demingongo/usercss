@@ -1,0 +1,258 @@
+/* ==UserStyle==
+@name           Spice on Rice 2
+@namespace      github.com/demingongo/usercss
+@version        1.0.3
+@description    for spotify
+@author         demingongo
+@homepageURL    https://github.com/demingongo/usercss
+@supportURL     https://github.com/demingongo/usercss/issues
+@updateURL      https://github.com/demingongo/usercss/raw/main/src/spotify/spiceonrice2.user.css
+@license        MIT
+@preprocessor   stylus
+@var select theme "Theme" ["yellow:Yellow Zen", "pink:Pink Zen", "purple:Purple Zen", "red:Red Zen"]
+==/UserStyle== */
+@-moz-document domain("open.spotify.com") {
+    /* open.spotify.com */
+
+
+    /* themes */
+    :root {
+        --translucide: rgba(18, 18, 18, 0.8);
+        --translucide2: rgba(18, 18, 18, 0.7);
+        --bg-blur: blur(4px);
+        --bg-url: url("http://raw.githubusercontent.com/shygyver/crispy-assets/refs/heads/main/images/winter-tree-2-noise.png") 0px fixed;
+    }
+
+    if theme==yellow {
+        :root {
+            --main-color: #ffff49;
+            --sub-color: #a88244;
+            --hi-color: #ffffb0;
+            --text-color: #ffc73b;
+            --encore-icon-fill: #4f223a;
+            --bg-url: url("https://wallpapercave.com/wp/wp11134589.png") 0px fixed;
+        }
+
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x,
+        img.DZJJ5SCypi2mREbjy5bx,
+        img.X_HqPouENflGygaUXNus {
+            filter: opacity(01) hue-rotate(280deg);
+        }
+    }
+
+    else if theme==pink {
+        :root {
+            --main-color: #6de2ef;
+            --sub-color: #b9588b;
+            --hi-color: #f5a3e7;
+            --text-color: #ec9ad7;
+            --encore-icon-fill: #4f223a;
+            --bg-url: url("https://raw.githubusercontent.com/demingongo/usercss/main/assets/wp11869650.jpg") 0px fixed;
+        }
+
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x,
+        img.DZJJ5SCypi2mREbjy5bx,
+        img.X_HqPouENflGygaUXNus {
+            filter: opacity(01) hue-rotate(180deg);
+        }
+    }
+
+    else if theme==purple {
+        :root {
+            --translucide: rgba(18, 18, 18, 0.5);
+            --bg-blur: blur(8px);
+
+            --main-color: #6a5ce5;
+            --sub-color: #3c348a;
+            --hi-color: #bc92f6;
+            --text-color: #a281f5;
+            --bg-url: url("https://raw.githubusercontent.com/demingongo/usercss/main/assets/wp4819898.jpg") 0px fixed;
+        }
+
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x,
+        img.DZJJ5SCypi2mREbjy5bx,
+        img.X_HqPouENflGygaUXNus {
+            filter: opacity(01) hue-rotate(130deg);
+        }
+    }
+
+    else if theme==red {
+        :root {
+            --translucide2: rgba(18, 18, 18, 0.9);
+            --bg-blur: blur(2px);
+
+            --main-color: #f11b1b;
+            --sub-color: #730505;
+            --hi-color: #f15959;
+            --text-color: #dd3a3a;
+            --encore-icon-fill: #4f223a;
+            --bg-url: url("https://wallpapercave.com/wp/wp9095151.jpg") 0px fixed;
+        }
+
+        /* spectrum image */
+        img.n5XwsUqagSoVk8oMiw1x,
+        img.DZJJ5SCypi2mREbjy5bx,
+        img.X_HqPouENflGygaUXNus {
+            filter: opacity(01) hue-rotate(230deg);
+        }
+    }
+
+    /* buttons, etc, ... */
+    .encore-dark-theme,
+    .encore-dark-theme .encore-base-set {
+        --text-bright-accent: var(--main-color);
+        --text-positive: var(--main-color);
+        --essential-bright-accent: var(--main-color);
+        --essential-positive: var(--main-color);
+    }
+
+    /* play buttons */
+    .encore-dark-theme .encore-bright-accent-set {
+        background-color: var(--main-color);
+    }
+
+    button[data-testid="play-button"] .e-91000-icon,
+    button[data-testid="control-button-playpause"] .e-91000-icon {
+        fill: var(--encore-icon-fill, currentColor);
+    }
+
+    .encore-dark-theme .encore-inverted-light-set {
+        --background-base: var(--main-color);
+    }
+
+    /* bottom control panel */
+    .dQoZDg5x_6337uhcvvdP,
+    .f9pLH3HRZQxdDLzNqKjE {
+        background-color: rgba(92 95 119 50%);
+        backdrop-filter: blur(50px);
+    }
+
+    /* left icons */
+    .KkmXuF5h8DmzQUwGhT2u .e-91000-icon {
+        fill: var(--main-color);
+    }
+
+    /* right icons */
+    .e-91000-icon {
+        fill: var(--main-color);
+    }
+
+    /* sliders (volume, track) */
+    /* current song */
+    /* current playlist */
+    /* right icons */
+    /* shuffle icon */
+    /* repeat icon */
+
+    /* left side */
+    #Desktop_LeftSidebar_Id,
+    .OR9izNpUGviUYBP_yQR2.doInDAjF8E_MHAPBv9fb {
+        background: transparent;
+    }
+
+    .vlH99nxvCKwDGQrD0B0M {
+        background-color: rgba(92 95 119 50%);
+        backdrop-filter: blur(50px);
+    }
+
+    .OR9izNpUGviUYBP_yQR2.doInDAjF8E_MHAPBv9fb {
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* playlist */
+    #main-view.HD6RiDXIzzF9i4Bx26AE {
+        background-color: rgba(92 95 119 50%);
+        backdrop-filter: blur(50px);
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .YdoIqRxigDKvBm7a7GSq {
+        background: transparent !important;
+    }
+
+    .PfgTAe4hVhuNFZRuuKQG {
+        background-color: rgba(92 95 119 100%);
+        backdrop-filter: blur(50px);
+        border-radius: 8px;
+    }
+
+    /* right side*/
+    .lAtoMFm8vg4yAlGztUxI,
+    .bVJH37qfz55VdpglJjHJ.tNb7aUcV3vqnG66qYF13,
+    .NdlHvD4nJ60_AhmI2cQK,
+    .pP41asBpzic1bRlrsDcs,
+    .oXO9_yYs6JyOwkBn8E4a,
+    #Desktop_PanelContainer_Id,
+    .iHa_q9pq4un3VNRQgwTx,
+    .ZWs_BNtabE4F1v34pU93.mpdgC9UTkN5_fMm1pFiz,
+    .zAvxP9ntNk6SsomFXWUv {
+        background-color: rgba(92 95 119 50%);
+        border-radius: 8px;
+    }
+
+    .lAtoMFm8vg4yAlGztUxI {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .uYfQVmF6J8ESfrb6dG6D {
+        background-color: rgba(92 95 119 50%);
+        backdrop-filter: blur(50px);
+        border-radius: 8px;
+    }
+
+    /* RIGHT NAV HEADER WHEN SCROLLING DOWN */
+    .niJOWstqVyfckHcXQxP1 .cSZJwcwYgJfwduUmXOOV {
+        background-color: rgba(92 95 119 50%);
+        backdrop-filter: blur(50px);
+    }
+
+    /* background */
+    :root #main>*>*,
+    :root .sqKERfoKl4KwrtHqcKOd,
+    :root .HkbHLcqgUfXruL5xVi28,
+    :root .uhDzVbFHyCQDH6WrWZaC,
+    :root .pHrwZOFBdT8FNXnmcPPI {
+        background-color: rgba(92 95 119 50%) !important;
+        backdrop-filter: blur(5px) !important;
+    }
+
+    .Root.global-nav.centered-layout {
+        background: var(--bg-url) !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+
+
+    /* Playing fullscreen */
+    .IiNKULzwo9JgYzlYVmhH.D8hDVfDlaGGt34V4nDGA {
+        outline: var(--panel-gap) solid transparent;
+        border-radius: 10px;
+    }
+
+    .IiNKULzwo9JgYzlYVmhH._3_LWNvctz6LK865o0Fvg {
+        outline: var(--panel-gap) solid transparent;
+        border-radius: 10px;
+
+    }
+
+    .IiNKULzwo9JgYzlYVmhH._3_LWNvctz6LK865o0Fvg:not(.D8hDVfDlaGGt34V4nDGA) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* fullscreen */
+    .IiNKULzwo9JgYzlYVmhH.E3V79f6uQHeTnFxMhoju._3_LWNvctz6LK865o0Fvg {
+        outline: var(--panel-gap) solid transparent;
+        border-radius: 10px;
+    }
+
+}
