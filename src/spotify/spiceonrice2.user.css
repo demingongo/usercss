@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice 2
 @namespace      github.com/demingongo/usercss
-@version        1.0.4
+@version        1.0.5
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -36,8 +36,8 @@
       --text-color: #ffc73b;
       --encore-icon-fill: #4f223a;
       --bg-url: url('https://wallpapercave.com/wp/wp11134589.png') 0px fixed;
-      --bg-color: rgba(92 95 119 50%);
-      --bg-color2: rgba(92 95 119 100%);
+      --bg-color: rgba(10 10 46 50%);
+      --bg-color2: rgba(10 10 46 100%);
       --filter-spectrum: opacity(01) hue-rotate(280deg);
     }
   }
@@ -125,7 +125,7 @@
   /* bottom control panel */
   .dQoZDg5x_6337uhcvvdP,
   .f9pLH3HRZQxdDLzNqKjE {
-    background-color: rgba(92 95 119 50%);
+    background-color: var(--bg-color);
     backdrop-filter: blur(50px);
   }
 
@@ -257,3 +257,4 @@
     border-radius: 10px;
   }
 }
+
