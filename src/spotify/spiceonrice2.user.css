@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice 2
 @namespace      github.com/demingongo/usercss
-@version        1.0.7
+@version        1.0.8
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -93,6 +93,23 @@
       --filter-spectrum: opacity(01) hue-rotate(230deg);
     }
   }
+  
+  else if theme==winter {
+    :root {
+      --bg-blur: blur(2px);
+      --main-color: #6de2ef;
+      --sub-color: #b9588b;
+      --hi-color: #f5a3e7;
+      --text-color: #ec9ad7;
+      --encore-icon-fill: #4f223a;
+      --bg-url: url('http://raw.githubusercontent.com/shygyver/crispy-assets/refs/heads/main/images/winter-tree-2-noise.png')
+        0px fixed;
+      --bg-color: rgba(92 95 119 50%);
+      --bg-color2: rgba(92 95 119 100%);
+      --bg-color-selected: hsla(0, 0%, 11%, 0.5);
+      --filter-spectrum: opacity(01) hue-rotate(180deg);
+    }
+  }
 
   /* spectrum image */
   img.n5XwsUqagSoVk8oMiw1x,
@@ -181,7 +198,7 @@
   .PfgTAe4hVhuNFZRuuKQG {
     background-color: var(--bg-color2);
     backdrop-filter: blur(50px);
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
   }
   
   /* table header */
@@ -223,6 +240,11 @@
   .niJOWstqVyfckHcXQxP1 .cSZJwcwYgJfwduUmXOOV {
     background-color: var(--bg-color);
     backdrop-filter: blur(50px);
+  }
+  
+  /* footer */
+  .main-view-container__mh-footer-container, .esBjsh {
+      background-color: var(--bg-color2);
   }
 
   /* background */
