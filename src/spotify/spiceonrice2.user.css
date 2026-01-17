@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice 2
 @namespace      github.com/demingongo/usercss
-@version        1.0.10
+@version        1.0.11
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -93,7 +93,7 @@
       --filter-spectrum: opacity(01) hue-rotate(230deg);
     }
   }
-  
+
   else if theme==winter {
     :root {
       --bg-blur: blur(2px);
@@ -127,6 +127,15 @@
     --essential-positive: var(--main-color);
   }
 
+  /* home and create playlist buttons */
+  .wgtzoAN2iFV0pENAqJko .YEAFPNm87XbzS4sF5dDe,
+  .UCyimCp8rEfL5nB8paBu {
+    background-color: var(--bg-color2);
+  }
+  .UCyimCp8rEfL5nB8paBu:hover {
+    background-color: var(--bg-color);
+  }
+
   /* play buttons */
   .encore-dark-theme .encore-bright-accent-set {
     background-color: var(--main-color);
@@ -145,7 +154,19 @@
   .dQoZDg5x_6337uhcvvdP,
   .f9pLH3HRZQxdDLzNqKjE {
     background-color: var(--bg-color);
-    backdrop-filter: blur(50px);
+  }
+
+  /* search modal */
+  .znOINyqAy7ivIGbQyrbt {
+    background-color: var(--bg-color2);
+  }
+  /* search input */
+  .RpMCAf8TjF6HpQSI7hdx .CFfhVwF52u3lETJ8lRWE {
+    background: var(--bg-color2);
+  }
+  .RpMCAf8TjF6HpQSI7hdx:hover .CFfhVwF52u3lETJ8lRWE,
+  .RpMCAf8TjF6HpQSI7hdx .CFfhVwF52u3lETJ8lRWE:focus {
+    background: var(--bg-color);
   }
 
   /* left icons */
@@ -200,10 +221,10 @@
     backdrop-filter: blur(50px);
     border-radius: 8px 8px 0px 0px;
   }
-  
+
   /* table header */
   .ARSbx0SA65V5vol27FS4.Y4EDvZXtKfdzwuoUAPwO {
-      background-color: var(--bg-color2);
+    background-color: var(--bg-color2);
   }
 
   .UhOLa3blz2xoAxM2vRwz.MxoETbR0GSKhCd1hp6Np,
@@ -241,10 +262,11 @@
     background-color: var(--bg-color);
     backdrop-filter: blur(50px);
   }
-  
+
   /* footer */
-  .main-view-container__mh-footer-container, .esBjsh {
-      background-color: var(--bg-color2);
+  .main-view-container__mh-footer-container,
+  .esBjsh {
+    background-color: var(--bg-color2);
   }
 
   /* background */
