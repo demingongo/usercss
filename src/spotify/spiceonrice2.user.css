@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice 2
 @namespace      github.com/demingongo/usercss
-@version        1.0.11
+@version        1.0.12
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -62,7 +62,7 @@
   else if theme==purple {
     :root {
       --translucide: rgba(18, 18, 18, 0.5);
-      --bg-blur: blur(4px);
+      --bg-blur: blur(10px);
 
       --main-color: #6a5ce5;
       --sub-color: #3c348a;
@@ -116,6 +116,12 @@
   img.DZJJ5SCypi2mREbjy5bx,
   img.X_HqPouENflGygaUXNus {
     filter: var(--filter-spectrum);
+  }
+
+  /* progress bars */
+  .LS6q7yFFlYCqXoVxEETT {
+    --fg-color: var(--main-color);
+    --is-active-fg-color: var(--hi-color);
   }
 
   /* buttons, etc, ... */
