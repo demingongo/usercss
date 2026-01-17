@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice 2
 @namespace      github.com/demingongo/usercss
-@version        1.0.8
+@version        1.0.9
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -9,7 +9,7 @@
 @updateURL      https://github.com/demingongo/usercss/raw/main/src/spotify/spiceonrice2.user.css
 @license        MIT
 @preprocessor   stylus
-@var select theme "Theme" ["yellow:Yellow Zen", "pink:Pink Zen", "purple:Purple Zen", "red:Red Zen"]
+@var select theme "Theme" ["yellow:Yellow Zen", "pink:Pink Zen", "purple:Purple Zen", "red:Red Zen", "winter:Winter"]
 ==/UserStyle== */
 @-moz-document domain("open.spotify.com") {
   /* open.spotify.com */
