@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice 2
 @namespace      github.com/demingongo/usercss
-@version        1.0.12
+@version        1.0.13
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -114,7 +114,8 @@
   /* spectrum image */
   img.n5XwsUqagSoVk8oMiw1x,
   img.DZJJ5SCypi2mREbjy5bx,
-  img.X_HqPouENflGygaUXNus {
+  img.X_HqPouENflGygaUXNus,
+  img.H70qcBekoGWOlskuON5R {
     filter: var(--filter-spectrum);
   }
 
