@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Spice on Rice
 @namespace      github.com/demingongo/usercss
-@version        2.1.0
+@version        2.1.1
 @description    for spotify
 @author         demingongo
 @homepageURL    https://github.com/demingongo/usercss
@@ -122,7 +122,7 @@
   }
 
   /* progress bars */
-  .kJxlhOSA7kjDpaQY {
+  .dbkoNhkHaGoGEWoY {
     --fg-color: var(--main-color);
     --is-active-fg-color: var(--hi-color);
   }
@@ -146,6 +146,10 @@
   ._EuXSrqTA94N1Evn:hover,
   .n5KI8mwa5o8qbn4b:hover {
     color: var(--hi-color);
+  }
+  /* bottom bullets (under icons) */
+  ._EuXSrqTA94N1Evn.edAR4snkv1Mq5EGG:after {
+    background-color: var(--main-color);
   }
 
   /* home and create playlist buttons and open playlist */
